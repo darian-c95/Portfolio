@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Titillium+Web:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+:root {
+    --colorVerde: #20A6A8;
+    --colorAzul: #02314E;
+    --colorAmarillo: #ffbc4a;
+    --colorBlanco: #fff;
+    --colorNegro: ;
+}
+
+
+body {
+    background: var(--colorVerde);
+    color: var(--colorBlanco);
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;  
+    padding-top: 8vh;
+    text-align: center;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo-estilo {
+    color: var(--colorAmarillo);
+    font-family: 'Ephesis', cursive;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3.5rem;
+    text-align: center; 
+    padding: 30px 0; 
+}
+
+/* --------------INICIO-------------------*/
+
+li { 
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    align-items: center;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 8vh;
+    justify-content: space-evenly;
+}
+
+span {
+    color: var(--colorAmarillo);
+    font-weight: bold;
+}
+
+.navbar {
+    background: var(--colorAmarillo); 
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.inicio-estilo {
+    display: flex;
+    flex-direction: column;
+    font-size: 3.2rem;
+    height: 92vh;
+    width: 55vw;
+    justify-content: center; 
+    margin: 0 auto;
+}
+
+/* --------------ACERCA DE MI-------------------*/
+
+.acerca-estilo {
+    background: var(--colorAzul);
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+} 
+
+.cont-descripcion {
+    height: 82vh;
+    display: flex;
+    align-items: center;
+    /* width: 50%;  */
+    width: 60%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.titulo-acerca-de-mi {
+    color: var(--colorAmarillo);
+    font-family: 'Ephesis', cursive;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3.5rem;
+    text-align: center; 
+} 
+
+.texto-descripcion {
+    /* padding: 0 54px; */
+    padding: 4rem 3rem;
+}
+
+ 
+.foto-estilo {
+    /* width: 100%; */
+    width: 350px;
+    clip-path: circle(); 
+}
+
+.custom-shape-divider-acerca-de-mi {
+    background-color: var(--colorAzul);
+} 
+
+/* --------------HABILIDADES-------------------*/
+
+.habilidades-estilo {
+    background: var(--colorVerde);
+    height: 92vh;
+}
+
+.contenedor-icon {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-evenly;
+    justify-content: space-around;
+    height: 83vh;
+    margin: 0 auto;
+    width: 60%;
+} 
+
+.titulo-habilidades {
+    color: var(--colorAmarillo);
+    font-family: 'Ephesis', cursive;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 3.5rem;
+    padding-top: 40px;
+    text-align: center; 
+}
+
+.fa-js {
+    color: #FFD700;
+}
+
+.fa-css3-alt { 
+    color: #1572B6;
+}
+
+.fa-html5 {
+    color: #F16524;
+}
+ 
+.fa-react {
+    color: #61DAFB;
+}
+
+.icon {
+    width: 40%;
+}
+
+.icon > i {
+    font-size: 15rem;
+    transition: 500ms;
+}
+
+.fas:hover {
+    transform: scale(1.1);
+}
+ 
+.fab:hover { 
+    transform: scale(1.1); 
+}
+
+/* --------------PROYECTOS-------------------*/
+
+.proyectos-propios {
+    background: var(--colorAzul);
+    /* height: 130vh;   */
+}
+
+.projectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 8rem; 
+    width: 100%; 
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 6rem;
+} 
+
+.project-image {
+    border: solid 1px;
+    height: 100%;
+    margin-bottom: 13px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* .project-image:hover {
+    opacity: .5;
+} */
+
+.projecto-anchor {
+    background: var(--colorAmarillo);
+    border-radius: 3px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 6px 17px;
+}
+
+/* --------------CONTACTO-------------------*/
+
+.contacto-estilo {
+    background: black;
+    height: 37vh;
+    position: relative;
+}
+
+.contacto-estilo a {
+    font-size: 2.5rem; 
+    width: 8%;
+    color: white;   
+}
+
+.contacto-estilo hr {
+    margin: 0 26%;
+    color: grey;
+}
+
+.contacto-icons {
+    align-items: center;
+    display: flex;
+    height: 40%;
+    justify-content: center;
+    text-align: center;
+}
+
+.texto-footer {
+    color: grey;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.contacto-icons i {
+    transition: 500ms;
+}
+
+/*--------------------------*/
+
+.custom-shape-divider-top-1634659790 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0; 
+    background: black;
+}
+
+.custom-shape-divider-top-1634659790 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1634660089 {
+    background: black;
+}
+ 
+
+.custom-shape-divider-proyectos {
+    background-color: var(--colorAzul);
+}
+
+.custom-shape-divider-acerca-de-mi {
+    background-color: var(--colorAzul);
+}
+
+
+@media (max-width: 1400px) {
+    .cont-descripcion {
+      height: 100px;      
+      font-size: 1.2rem;
+      flex-direction: column;
+    }
+
+    .acerca-estilo {
+        height: 110vh;
+    }
+
+    .titulo-acerca-de-mi {
+        padding: 5rem 0;
+    }
+
+    .custom-shape-divider-acerca-de-mi {
+        position: absolute;
+    }
+
+    .custom-shape-divider-proyectos {
+        position: absolute;
+    }
+}
+
+@media (min-width: 1200px) {
+    .proyectos-propios { 
+        height: 130vh;  
+    }
+}
+
+@media (max-width: 1215px) {
+    .proyectos-propios {
+        padding: 6rem 1rem; 
+    }
+
+    .projectos-grid {
+        grid-template-columns: 1fr;
+    } 
+}
+
+@media (max-width: 950px) {
+    .acerca-estilo {
+        height: 135vh;
+    }
+}
+
+@media (max-width: 750px) {
+    .habilidades-estilo {
+        font-size: 1.2rem;
+    }
+
+    .icon > .fab {
+        font-size: 7rem;
+    } 
+
+}
+
+@media (max-width: 650px) {
+    .inicio-estilo {
+        font-size: 2.2rem;
+    }
+
+    .acerca-estilo {
+        height: 174vh;
+    }
+
+    .texto-descripcion {
+        padding: 4rem 0rem;
+    }
+
+    .navbar {
+        position: absolute;
+    }
+
+    ul {
+        flex-direction: column;
+        height: 19vh;
+    }
+
+    .contacto-icons { 
+        justify-content: space-evenly!important; 
+    }
+ 
+}
+
+@media (max-width: 350px) {
+    .acerca-estilo {
+        height: 168vh;
+    }
+
+    .texto-descripcion {
+        padding: 4rem 0;
+    }
+}
+
+@media (max-height: 670px) { 
+    ul {
+        height: 28vh;
+    }
+
+    a {
+        font-size: 1.2rem;
+    }
+
+    .inicio-estilo {
+        font-size: 1.6rem; 
+    }
+
+    .inicio-estilo > p {
+        padding-top: 100px;
+    }
+
+    .acerca-estilo {
+        height: 240vh;
+    }
+
+    .icon > i {
+        font-size: 6rem;
+    }
+
+    .titulo-estilo {
+        padding: 0;
+    }
+
+    .contenedor-icon {
+        height: 73vh!important;
+    }
+
+    /* .contacto-estilo {
+        height: 48vh!important;
+    } */
+
+    /* .contacto-icons { 
+        justify-content: space-evenly; 
+    } */
+
+    /* .contacto-estilo hr {
+        margin: 0 9%;
+    }
+
+    .texto-footer {
+        margin-top: 25px;
+    } */
+}
