@@ -34,8 +34,7 @@ body {
     text-align: center; 
     padding: 30px 0; 
 }
-
-/* --------------INICIO-------------------*/
+ 
 
 li { 
     list-style: none;
@@ -75,23 +74,19 @@ span {
     width: 55vw;
     justify-content: center; 
     margin: 0 auto;
-}
-
-/* --------------ACERCA DE MI-------------------*/
+} 
 
 .acerca-estilo {
     background: var(--colorAzul);
     height: 92vh;
     display: flex;
-    flex-direction: column;
-    /* justify-content: space-evenly; */
+    flex-direction: column; 
 } 
 
 .cont-descripcion {
     height: 82vh;
     display: flex;
-    align-items: center;
-    /* width: 50%;  */
+    align-items: center; 
     width: 60%;
     text-align: left;
     margin: 0 auto;
@@ -105,23 +100,19 @@ span {
     text-align: center; 
 } 
 
-.texto-descripcion {
-    /* padding: 0 54px; */
+.texto-descripcion { 
     padding: 4rem 3rem;
 }
 
  
-.foto-estilo {
-    /* width: 100%; */
+.foto-estilo { 
     width: 350px;
     clip-path: circle(); 
 }
 
 .custom-shape-divider-acerca-de-mi {
     background-color: var(--colorAzul);
-} 
-
-/* --------------HABILIDADES-------------------*/
+}  
 
 .habilidades-estilo {
     background: var(--colorVerde);
@@ -180,18 +171,16 @@ span {
  
 .fab:hover { 
     transform: scale(1.1); 
-}
-
-/* --------------PROYECTOS-------------------*/
+} 
 
 .proyectos-propios {
-    background: var(--colorAzul);
-    /* height: 130vh;   */
+    background: var(--colorAzul); 
 }
 
 .projectos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: 400px 400px;
+    justify-content: center;
     grid-gap: 8rem; 
     width: 100%; 
     max-width: 1280px;
@@ -208,10 +197,6 @@ span {
     width: 100%;
 }
 
-/* .project-image:hover {
-    opacity: .5;
-} */
-
 .projecto-anchor {
     background: var(--colorAmarillo);
     border-radius: 3px;
@@ -220,7 +205,6 @@ span {
     padding: 6px 17px;
 }
 
-/* --------------CONTACTO-------------------*/
 
 .contacto-estilo {
     background: black;
@@ -257,8 +241,6 @@ span {
 .contacto-icons i {
     transition: 500ms;
 }
-
-/*--------------------------*/
 
 .custom-shape-divider-top-1634659790 {
     position: absolute;
@@ -417,21 +399,6 @@ span {
 
     .contenedor-icon {
         height: 73vh!important;
-    }
+    } 
 
-    /* .contacto-estilo {
-        height: 48vh!important;
-    } */
-
-    /* .contacto-icons { 
-        justify-content: space-evenly; 
-    } */
-
-    /* .contacto-estilo hr {
-        margin: 0 9%;
-    }
-
-    .texto-footer {
-        margin-top: 25px;
-    } */
 }
